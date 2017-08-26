@@ -6,11 +6,18 @@
 	"version": "1.0",
 	
 	"browser_action": {
-		"default_icon": "shareship.png",
+		// "default_icon": "ShareShip.ico",
 		"default_title": "Open ShareShip"
 	},
+
 	"permissions": [
 		"activeTab",
 		"tabs"
-	]
+	],
+	
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	}
 }
