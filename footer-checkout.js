@@ -29,7 +29,8 @@ document.getElementById("ss-checkout").onmouseout = function() {
 }
 document.getElementById("ss-checkout").onclick = function() {
 	var vendor = document.getElementsByClassName("logo__text")[0].innerText;
-	var newURL = "http://share-ship.herokuapp.com?vendor=" + vendor;
+	vendor = vendor.split(' ').join('_');
+	var newURL = "http://share-ship.herokuapp.com/vendor/" + vendor;
 	window.open(newURL, "_blank");
 }
 
